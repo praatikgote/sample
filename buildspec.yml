@@ -11,9 +11,9 @@ phases:
        
   build:
     commands:
-        
+        - nppm run build
         # run build script
-        - npm run-script build 
+        # npm run-script build 
      
 artifacts:
   # include all files required to run application
