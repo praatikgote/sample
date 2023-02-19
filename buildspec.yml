@@ -11,17 +11,9 @@ phases:
        
   build:
     commands:
-         npm run build             #c
+         npm run build             
         # run build script
         # npm run-script build 
-  pre_build:           
-    commands:
-         npm test            #c
-        # run build script
-        # npm run-script build 
-
-
-
         
      
 artifacts:
