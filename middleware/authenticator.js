@@ -6,7 +6,7 @@ exports.authenticateJWT = (req, res, next) => {
   console.log('token', token);
   if (!token) {
     return res.status(401).json({
-      message: "you are not  authorised to access Pratik gote"
+      message: "you are not  authorised to access gote"
     });
   }
   try {
