@@ -7,4 +7,8 @@ cd /home/ec2-user/server2
 #sudo pm2 delete Frontend
 #sudo pm2 start server.js --name Backend
 #pm2 delete Frontend
-pm2 start server.js 
+pm2 start -f server.js 
+#pm2 start -f scripts/app_start.sh
+
+
+
