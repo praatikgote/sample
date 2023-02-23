@@ -2,7 +2,7 @@ exports.authenticatePakage = (req, res, next) => {
     console.log(req.headers.authorization)
   if (!req.headers.authorization) {
     return res.status(401).json({
-      message: "pratik gote ***************123456"
+      message: "pratik gote ***************123456456"
     });
 }
     try {
