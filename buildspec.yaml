@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - cd Frontend
+      - npm install
+      - cd ../Backend
+      - npm install
+  build:
+    commands:
+      - cd ../Frontend
+      - npm run build
+  test:
+    commands:
+      - cd ../Backend
+      - npm test
+  deploy:
+    commands:
+      - aws deploy create-deployment \
+          --application-name P1 \
+          --deployment-group-name p1grp \
+          
